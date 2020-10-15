@@ -1,0 +1,14 @@
+
+language: cpp
+os:
+    - linux
+compiler:
+    - gcc
+    - clang
+env:
+
+script:
+  - cmake CMakeLists.txt
+  - make
+  - ./runTests
+  - valgrind --leak-check=full --track-origins=yes ./IZ1
