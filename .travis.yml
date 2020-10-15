@@ -1,0 +1,12 @@
+
+language: cpp
+os:
+    - linux
+compiler:
+    - gcc
+    - clang
+
+script:
+  - cmake CMakeLists.txt
+  - make
+  - ./runTests 
