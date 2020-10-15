@@ -9,5 +9,4 @@ compiler:
 script:
   - cmake CMakeLists.txt
   - make
-  - ./runTests
-  - valgrind --leak-check=full --track-origins=yes ./IZ1
+  - ./runTests 
