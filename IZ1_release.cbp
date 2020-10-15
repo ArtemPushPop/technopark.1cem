@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="IZ1_release"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/artem/CLionProjects/IZ1_release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/artem/CLionProjects/IZ1_release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/artem/CLionProjects/IZ1_release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IZ1_release">
+				<Option output="/home/artem/CLionProjects/IZ1_release/IZ1_release" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artem/CLionProjects/IZ1_release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 IZ1_release"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IZ1_release/fast">
+				<Option output="/home/artem/CLionProjects/IZ1_release/IZ1_release" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artem/CLionProjects/IZ1_release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 IZ1_release/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runTests">
+				<Option output="/home/artem/CLionProjects/IZ1_release/runTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artem/CLionProjects/IZ1_release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 runTests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runTests/fast">
+				<Option output="/home/artem/CLionProjects/IZ1_release/runTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artem/CLionProjects/IZ1_release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 runTests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/artem/CLionProjects/IZ1_release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/artem/CLionProjects/IZ1_release/list_functions.c">
+			<Option target="IZ1_release"/>
+			<Option target="runTests"/>
+		</Unit>
+		<Unit filename="/home/artem/CLionProjects/IZ1_release/main.c">
+			<Option target="IZ1_release"/>
+		</Unit>
+		<Unit filename="/home/artem/CLionProjects/IZ1_release/mylist.h">
+			<Option target="IZ1_release"/>
+		</Unit>
+		<Unit filename="/home/artem/CLionProjects/IZ1_release/ship_functions.c">
+			<Option target="IZ1_release"/>
+			<Option target="runTests"/>
+		</Unit>
+		<Unit filename="/home/artem/CLionProjects/IZ1_release/ship_header.h">
+			<Option target="IZ1_release"/>
+		</Unit>
+		<Unit filename="/home/artem/CLionProjects/IZ1_release/test.cpp">
+			<Option target="runTests"/>
+		</Unit>
+		<Unit filename="/home/artem/CLionProjects/IZ1_release/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

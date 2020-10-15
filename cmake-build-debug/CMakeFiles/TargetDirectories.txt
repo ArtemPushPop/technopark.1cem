@@ -1,0 +1,3 @@
+/home/artem/CLionProjects/IZ1_release/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/artem/CLionProjects/IZ1_release/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/artem/CLionProjects/IZ1_release/cmake-build-debug/CMakeFiles/IZ1_release.dir

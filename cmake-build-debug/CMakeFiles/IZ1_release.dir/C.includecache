@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/artem/CLionProjects/IZ1_release/list_functions.c
+stdio.h
+-
+stdlib.h
+-
+mylist.h
+/home/artem/CLionProjects/IZ1_release/mylist.h
+ship_header.h
+/home/artem/CLionProjects/IZ1_release/ship_header.h
+
+/home/artem/CLionProjects/IZ1_release/mylist.h
+ship_header.h
+/home/artem/CLionProjects/IZ1_release/ship_header.h
+
+/home/artem/CLionProjects/IZ1_release/ship_header.h
+stdio.h
+-
+stdlib.h
+-
+
