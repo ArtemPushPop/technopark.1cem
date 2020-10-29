@@ -9,13 +9,18 @@ addons:
     update: true
 compiler: 
   - gcc
-dist: trusty
 install: 
   - "cd /usr/src/gtest"
   - "sudo cmake CMakeLists.txt"
   - "sudo make"
   - "sudo cp *.a /usr/lib"
 language: c
+matrix: 
+  include: 
+    - 
+      dist: bionic
+    - 
+      dist: xenial
 os: 
   - linux
 script: 
