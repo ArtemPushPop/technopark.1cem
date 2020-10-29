@@ -1,4 +1,4 @@
-dist:     beaver
+dist:     xenial
 sudo:     required
 
 language: c
