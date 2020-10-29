@@ -1,45 +1,45 @@
 #include <stdio.h>
-#include "mylist.h"
-#include "ship_header.h"
+#include "src/vector/vector.h"
+#include <stdlib.h>
 
-#define ship_stat "ship_data2.txt"
+//#ifdef PARALLEL		//почему то не потребовались...
+#include "libs/parallel_lib/Parallel_search.h"
+//#endif
+
+//#ifdef LINEAR
+#include "libs/linear_lib/Linear_search.h"
+//#endif
+
+#define DATA_FILE "data/data.txt"
+#define PATT_FILE "data/patt.txt"
 
 
 int main() {
-    FILE *fp = fopen(ship_stat, "r");
-    char usage;
+    vector *finder, *patt;
 
-    node *list;
-    list = load(fp);
-    do {
-        printf("F - найти в базе корабли соответствующие требованиям\n");
-        printf("A - добавить в базу новые составляющие\n");
-        printf("D - удалить из базе корабли соответствующие требованиям\n");
-        printf("E - закончить работу\n");
-        printf("что вы хотите сделать с базой данных? ");
-        usage = getchar();
-        printf("\n\n\n");
 
-        switch(usage){
-            case('F'):{
-                find_ships(list);
-                break;
-            }
-            case('D'):{
-                list = search_and_delete(list);
-                break;
-            }
-            case('A'):{
-                list = add(list);
-            }
-            case('E'): break;
-            default: perror("exit WRONG_ARGS"); exit(5);
-        }
-    }while (usage != 'E');
+    //GETTING PATTERN
+    FILE *fpatt;
+    if ((fpatt = fopen(PATT_FILE, "rb")) == NULL)
+        exit(1);
+    patt = LoadPattern(fpatt);
+    fclose(fpatt);
 
-    fclose(fp);
-    fp = fopen(ship_stat, "w");
-    write_list(fp, list);
-    fclose(fp);
+    printf("HERE'S PATTERN:\n");
+    PrintVec(patt);
+    printf("\n\n\n");
+    //GETTING PATTERN
+
+    finder = Find_vector(patt, DATA_FILE);
+
+    //PRINT ANSWER
+    printf("FINDED THIS:\n");
+    PrintVec(finder);
+    printf("\ndifference : %lf\n", vec_cmp(patt, finder));
+    //PRINT ANSWER
+
+    FreeVec(finder);
+    FreeVec(patt);
+
     return 0;
 }
