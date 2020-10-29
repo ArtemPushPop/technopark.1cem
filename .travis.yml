@@ -1,0 +1,36 @@
+--- 
+addons: 
+  apt: 
+    packages: 
+      - valgrind
+      - cppcheck
+      - cmake
+      - libgtest-dev
+    update: true
+compiler: 
+  - gcc 
+dist: trusty
+install: 
+  - "cd /usr/src/gtest"
+  - "sudo cmake CMakeLists.txt"
+  - "sudo make"
+  - "sudo cp *.a /usr/lib"
+language: c
+os: 
+  - linux
+script: 
+  - "cd /home/travis/build/ArtemPushPop/technopark.1cem/IZ2/"
+  - "make bulid_conf=parallel"
+  - "make bulid_conf=parallel"
+  - "cd src/filler"
+  - "gcc tester.c"
+  - "./a.out 1000 100"
+  - "cd ../.."
+  - "valgrind --tool=memcheck --leak-check=full .IZ2_linear"
+  - "valgrind --tool=memcheck --leak-check=full .IZ2_parallel"
+  - "cd src/unit_testing"
+  - "cmake CMakeLists.txt"
+  - make
+  - ./runTests
+sudo: required
+
